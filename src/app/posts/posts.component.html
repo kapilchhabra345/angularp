@@ -1,0 +1,38 @@
+<p>posts works!</p>
+<!-- <ul *ngFor="let post of posts">
+    <li>{{post.id}}</li>
+</ul> -->
+
+
+
+<input  #title type="text" class="form-control">
+<button (click)="createPostC(title)">createPostC</button>
+
+<br>
+<input type="text" #devalue class="form-control">
+<button (click)="createUser(devalue)">User Data Click</button>
+<table>
+    <thead>
+        <th>Head</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let userData of users">
+            <td>{{userData.name}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- <input type="text" #box (keyup)="onSave(box.value)" >  -->
+
+
+<!-- //{{PShowdata.id}} -->
+<!-- <ul *ngFor="let post of PShowdata">
+    <li>{{post.title}}</li>
+</ul> -->
+
+<ul *ngFor="let post of posts">
+    <li>
+       {{post.id}}
+    </li>
+</ul>

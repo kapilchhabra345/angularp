@@ -1,18 +1,28 @@
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServiceComponent } from './service/service.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BiodataService } from './biodata.service';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServiceComponent,
+    PostsComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BiodataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
